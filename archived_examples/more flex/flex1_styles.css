@@ -1,0 +1,121 @@
+nav {
+    border: 2px solid #eeeeee;
+  }
+  
+ nav a {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid rgb(96 139 168);
+    border-radius: 5px;
+    background-color: rgb(96 139 168 / 0.2);
+    padding: 10px;
+    display: block;
+  }
+  
+ nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* nav li {
+    flex: auto;
+  } */
+
+ .push-right {
+    margin-left: auto;
+  }
+
+ .box {
+    height: 300px;
+    border: 2px dotted rgb(96 139 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ .box div {
+    border: 2px solid rgb(96 139 168);
+    border-radius: 5px;
+    background-color: rgb(96 139 168 / 0.2);
+    width: 100px;
+    height: 100px;
+  }
+
+ body {
+    font-family: sans-serif;
+  }
+ 
+ .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  
+.card {
+    border: 2px solid rgb(96 139 168);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ .card .content {
+    padding: 10px;
+    flex: 1 1 auto;
+  }
+  
+ .card footer {
+    background-color: rgb(96 139 168 / 0.2);
+    padding: 10px;
+  }
+
+ img {
+    max-width: 100%;
+    display: block;
+    /* max-width: 100px; */
+  }
+  
+ .media {
+    border: 2px dotted rgb(96 139 168);
+    display: flex;
+    align-items: flex-start;
+  }
+  
+ .media .content {
+    /* flex: 1; */
+    flex: 3;
+    padding: 10px;
+  }
+
+ .flipped {
+  flex-direction: row-reverse;
+ }
+  
+.image {
+  flex: 1;
+  padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+  border: 1px solid rgb(96 139 168);
+}
+.wrapper > * {
+  padding: 10px;
+  border: none;
+  color: #fff;
+}
+.wrapper > input[type="text"] {
+  background-color: rgb(96 139 168 / 0.5);
+  border-right: 1px solid rgb(96 139 168);
+  flex: 1 1 auto;
+}
+.wrapper input[type="submit"] {
+  background-color: rgb(96 139 168);
+  color: #fff;
+}
+.wrapper label {
+  background-color: #666;
+}
